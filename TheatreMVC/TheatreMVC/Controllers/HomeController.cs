@@ -10,6 +10,14 @@ namespace TheatreMVC.Controllers
     {
         public ActionResult Index()
         {
+            TheatreEntities te = new TheatreEntities();
+            foreach(var spectacle in te.Spectacles)
+            {
+                if(spectacle.Date_sp==DateTime.Now)
+                {
+
+                }
+            }
             return View();
         }
 

@@ -241,6 +241,7 @@
       <DependentUpon>ModelTheatre.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\MyMVCTheatre - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\MyMVCTheatre - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\MyMVCTheatre - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\TheatreMVC20161204110922.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
