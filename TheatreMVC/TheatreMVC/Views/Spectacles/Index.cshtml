@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TheatreMVC.Spectacle>
+
+@{
+    ViewBag.Title = "Вистави";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Створити нову", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Spectacle_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Exposition_sp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_sp)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Spectacle_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Exposition_sp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_sp)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Редагувати", "Edit", new { id=item.Spectacle_id }) |
+            @Html.ActionLink("Деталі", "Details", new { id=item.Spectacle_id }) |
+            @Html.ActionLink("Видалити", "Delete", new { id=item.Spectacle_id })
+        </td>
+    </tr>
+}
+
+</table>
